@@ -35,7 +35,7 @@ for i in range(0, m+1):
     for j in range(0, m+1):
         graph_array[i].append(0)
 
-for i in range(0, m):
+for i in range(0, m+1):
     a, b = map(int, input().split())
     graph_array[a][b] = 1
 
