@@ -6,7 +6,10 @@ read = sys.stdin.readline
 test_case = int(input())
 
 for case in range(0, test_case):
-    m, n, k = map(int, input().split())
+    m, n, k = input().split()
+    m = int(m)
+    n = int(n)
+    k = int(k)
     answer = 0
 
     field = [[0] * (m) for _ in range(n)]  #해당 좌표에 배추가 있는지
