@@ -1,3 +1,19 @@
+
+def solution3(total_sugar):
+    five = 0
+    three = 5001
+    total = five + three
+    while five*5 < total_sugar:
+        div, mod = divmod((total_sugar - five*5), 3)
+        if mod == 0 and five + div < total:
+            three = div
+            total = five + three
+        five += 1
+        
+    if total == 5001:
+        return -1
+    return total
+
 def solution1(total_sugar):
     three = 0
     five = 0
@@ -27,5 +43,9 @@ def solution2(total_sugar):
     return 
     
     
-total_sugar = int(input())
-solution2(total_sugar)
+# total_sugar = int(input())
+# solution2(total_sugar)
+
+
+N = int(input())
+print(solution3(N))
