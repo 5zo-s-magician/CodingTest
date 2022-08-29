@@ -70,7 +70,7 @@ bfs(graph2, v, start, [start])
 
 
 def dfs(graph, v, start):
-      already = [start]
+  already = [start]
   stack = [start]
   path = []
   while len(stack) != 0:
@@ -83,7 +83,7 @@ def dfs(graph, v, start):
         stack.append(i)
         already.append(i)
         # graph[now][i] = 0
-        # graph[i][now] = 0
+        # graph[i][now] = 0ß
         break
   return path
 
