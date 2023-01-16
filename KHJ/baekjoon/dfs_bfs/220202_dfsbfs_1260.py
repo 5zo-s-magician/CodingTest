@@ -8,10 +8,7 @@
 # 옆으로 순서대로 감
 # queue 사용
 def dfs(graph, v, start, already):
-    #print(start, end = " ")
-
-           
-           
+    #print(start, end = " ")    
     for i in range(1, v+1):
        if graph[start][i] == 1 and i not in already:
             graph[start][i] = 0
